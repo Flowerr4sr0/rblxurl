@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roblox URL Shortener</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="output-box" style="padding: 20px;">
+    <span>Roblox URL Shortner<br>Home</span>
+    <nav>
+      <a href="/"><span>Home</span></a>
+      <p></p>
+      <a href="/Privacy Policy/"><span>Privacy Policy</span></a>
+      <p></p>
+      <a href="/Open Source/"><span>Open Source</span></a>
+    </nav>
+  </div><br>
+  <div class="input-row">
+
+    <div class="dropdown" id="custom-dropdown">
+      <button class="dropdown-button" type="button">
+        <span id="selected-label">--- SELECT OPTION ---</span>
+        <span class="arrow">⌄</span>
+      </button>
+
+      <div class="dropdown-menu">
+        <div class="dropdown-option" data-value="rblx.name">Profile via User ID</div>
+        <div class="dropdown-option" data-value="user.rblx.name">Profile via Username</div>
+        <div class="dropdown-option" data-value="rblx.games">Game via Game ID</div>
+        <div class="dropdown-option" data-value="rblx.clothing">Avatar Item via ID</div>
+        <div class="dropdown-option" data-value="rblx.social">Group/Community via ID</div>
+        <div class="dropdown-option" data-value="rblx.media">Asset via ID (Image/Model/etc)</div>
+      </div>
+    </div>
+
+    <input type="text" id="input" placeholder="Enter ID or username">
+
+  </div>
+<br>
+  <div class="output-box">
+    <p id="output"></p>
+    <button id="copy-button" type="button">Copy</button>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
